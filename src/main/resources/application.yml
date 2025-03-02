@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: boot-ai
+
+server:
+  port: 8090
+
