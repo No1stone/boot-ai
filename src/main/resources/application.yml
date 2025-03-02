@@ -1,6 +1,10 @@
 spring:
   application:
     name: boot-ai
+  ai:
+    chat:
+      client:
+        enabled: false
 
 server:
   port: 8090
