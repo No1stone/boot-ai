@@ -5,7 +5,8 @@ spring:
     chat:
       client:
         enabled: false
-
+    openai:
+      api-key:  ${key.ai.chatgpt}
+      api-url: https://api.openai.com/v1
 server:
   port: 8090
-

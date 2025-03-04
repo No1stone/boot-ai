@@ -14,3 +14,9 @@ spring git: https://github.com/spring-projects/spring-ai/tree/main/models/spring
 ![img_2.png](src/main/resources/static/img_2.png)
 
 ![img_3.png](src/main/resources/static/img_3.png)
+
+ref = chatgpt
+https://platform.openai.com/settings/organization/billing/overview
+결제 정보 추가하고 다시 시도.
+
+
