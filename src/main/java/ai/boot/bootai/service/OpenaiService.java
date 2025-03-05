@@ -16,7 +16,7 @@ import java.lang.module.Configuration;
 @RequiredArgsConstructor
 public class OpenaiService {
 
-    private final OpenAiChatModel openAiChatModel;
+    private final ConfigOpenAi configOpenAi;
 
 //    private final OpenAiChatModel openAiChatModel;
 //
@@ -29,7 +29,7 @@ public class OpenaiService {
 //    }
 
         public String call(String text) {
-        return openAiChatModel.call(text);
+        return configOpenAi.openAiChatModel().call(text);
     }
 
 }

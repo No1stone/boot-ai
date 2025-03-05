@@ -10,3 +10,12 @@ spring:
       api-url: https://api.openai.com/v1
 server:
   port: 8090
+
+logging:
+  level:
+    org:
+      springframework:
+        ai: DEBUG
+        opemai: debug
+        web:
+          client: trace

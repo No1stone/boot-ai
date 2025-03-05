@@ -18,7 +18,7 @@ public class ConfigOpenAi {
 
     @Bean(name = "openAiApi")
     public OpenAiApi openAiApi() {
-        return new OpenAiApi("https://api.openai.com/v1/", chatGpt);
+        return new OpenAiApi("https://api.openai.com", chatGpt);
     }
 
     @Bean(name = "openAiChatOptions")
@@ -34,7 +34,7 @@ public class ConfigOpenAi {
                 .build();
     }
 
-    @Bean("oepnAiToolCallingManager")
+    @Bean("openAiToolCallingManager")
     public ToolCallingManager toolCallingManager() {
         return ToolCallingManager.builder().build(); // 올바른 생성자 확인 필요
     }
@@ -46,10 +46,8 @@ public class ConfigOpenAi {
 
 
     @Bean(name = "openAiChatModel")
-    public OpenAiChatModel openAiChatModel(
-            OpenAiApi openAiApi, OpenAiChatOptions openAiOptions,
-            RetryTemplate retryTemplate) {
-        OpenAiChatModel oacm = new OpenAiChatModel(openAiApi, openAiOptions, toolCallingManager(), retryTemplate ,observationRegistry());
+    public OpenAiChatModel openAiChatModel() {
+        OpenAiChatModel oacm = new OpenAiChatModel(openAiApi(), openAiChatOptions(), toolCallingManager(), retryTemplate() ,observationRegistry());
         return oacm;
     }
 
