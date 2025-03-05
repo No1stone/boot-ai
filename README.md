@@ -15,8 +15,21 @@ spring git: https://github.com/spring-projects/spring-ai/tree/main/models/spring
 
 ![img_3.png](src/main/resources/static/img_3.png)
 
-ref = chatgpt
-https://platform.openai.com/settings/organization/billing/overview
-결제 정보 추가하고 다시 시도.
+chatgpt
+ref = https://platform.openai.com/settings/organization/billing/overview
+
+gemini 
+ref = https://aistudio.google.com/apikey
+
+```bash
+curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=GEMINI_API_KEY" \
+-H 'Content-Type: application/json' \
+-X POST \
+-d '{
+  "contents": [{
+    "parts":[{"text": "Explain how AI works"}]
+    }]
+   }'
+```
 
 
