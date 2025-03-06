@@ -32,4 +32,11 @@ curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:g
    }'
 ```
 
+![img_4.png](src/main/resources/static/img_4.png)
+
+api활성
+![img_5.png](src/main/resources/static/img_5.png)
+
+![img_6.png](src/main/resources/static/img_6.png)
+
 
