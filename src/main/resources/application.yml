@@ -17,6 +17,9 @@ spring:
       location: "us-central1"
       model: "gemini-1.0-pro"
       credentials-path: "classpath:/linear-aviary-298205-4522f5a43b70.json"
+    perplexity:
+      api-key: ${ai.perplexity.api-key}
+      url: https://api.perplexity.ai/chat/completions
 
 
 server:
